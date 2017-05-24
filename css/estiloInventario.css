@@ -1,0 +1,17 @@
+.icono{
+    font-size: 30px;
+    float: left;
+}
+
+.formulario{
+    float: left;
+}
+
+.botonBuscar{
+    margin-left: 10px;
+}
+
+.imgAgregarArt{
+    width: 60px;
+    height: 60px;
+}

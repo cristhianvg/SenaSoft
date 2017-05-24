@@ -1,0 +1,58 @@
+.divHeader{
+    width: 100%;
+    height: 105px;
+    background: #A38F84;
+    padding-top: 5px;
+}
+.titulo{
+    margin-left: 20px;
+    margin-top: 0px;
+    font-family: TypoUpright BT;
+    font-weight: bold;
+    font-size: 80px;
+}
+.iconoUser{
+    float: right;
+    font-size: 20px;
+    margin-right: 20px;
+    margin-top: 70px;
+}
+.divOculto{
+    border: solid 1px #A38F84;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.imgPerfil{
+    width: 80px;
+    height: 80px;
+}
+
+.botones{
+    margin-bottom: 10px;
+}
+
+.parrafo{
+    text-align: center;
+    font-weight: bold;
+    margin: 40px;
+}
+.panel-Modulo{
+    border-color: #286090;
+    margin-top: 0px
+}
+.headerPanel{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.footerPanel{
+    padding: 10px;
+    border-color: #286090;
+}
+.tituloFooter{
+    font-size: 20px;
+}
+.iconoFlecha{
+    font-size: 30px;
+}
+

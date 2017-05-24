@@ -1,0 +1,57 @@
+<!-- Modal de Editar de Usuarios -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="editarUsuario" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Editar Usuario</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="alert alert-success" ng-show="alerta">
+                        <center>Usuario Editado</center>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nomUsuario"  ng-model="edit.nomUsuario" placeholder="Nombre de Usuario*">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" id="contrasena" ng-model="edit.contrasena" placeholder="Contraseña*">
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="nombre" ng-model="edit.nombre" placeholder="Nombre*">
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control input-sm" ng-model="edit.rol">
+                            <option value="Usuario" ng-selected="(edit.rol === 'Usuario') ? true : false">Usuario</option>
+                            <option value="Admin" ng-selected="(edit.rol === 'Admin') ? true : false">Admin</option>
+                        </select>
+                    </div>
+                    <button ng-click="procesarEditarUsuario()" type="button" class="btn btn-primary btn-block btn-sm">Editar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal de Eliminar Usuarios -->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" id="eliminarUsuario" role="dialog" aria-labelledby="mySmallModalLabel">
+    <div class="modal-dialog modal-sm" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Eliminar Usuario</h4>
+            </div>
+            <div class="modal-body">
+                <div class="alert alert-success" ng-show="alerta">
+                    <center>Usuario Eliminado correctamente</center>
+                </div>
+                <center><h3>¿Esta Seguro?</h3>
+                    <p>Se va a eliminar a</p>
+                    <p>{{nombre}}</p></center>
+            </div>
+            <div class="modal-footer">
+                <button ng-click="eliminarFinal(ideliminar)" type="button" class="btn btn-danger btn-block btn-sm">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>

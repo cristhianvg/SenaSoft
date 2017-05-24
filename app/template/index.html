@@ -1,0 +1,36 @@
+<div class='container container-fluid'>
+    <div class="row">
+        <div class='col-lg-4 col-lg-offset-4 col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-12'>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <center><h1 class="titulo">Inventory</h1></center>
+                </div>
+                <div class="panel-body">
+                    <p>Inicie session para entrar al programa</p>
+
+                    <form>
+                        <div class="form-group">
+                            <input type="text" class="form-control" id="usuario" ng-model="dataLogin.usuario" placeholder="Usuario">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" id="contrasena" ng-model="dataLogin.contrasena" placeholder="Contraseña">
+                        </div>
+
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" ng-model="dataLogin.recordar"> Recordarme
+                            </label>
+                        </div>
+                        <div class="alert alert-danger" ng-show="alerta">
+                            Usuario inválido
+                        </div>
+                        <button ng-click="procesarLogin()" type="button" class="btn btn-success btn-block">Iniciar Session</button> 
+                        <a href="#!/revisarInventario" class="linkRevisar btn btn-default btn-block">Revisar Inventario</a>
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
